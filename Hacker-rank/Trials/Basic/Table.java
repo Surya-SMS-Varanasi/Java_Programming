@@ -1,0 +1,27 @@
+/*
+Print 10 lines of output; each line  (where ) contains the  of  in the form:
+N x i = result.
+
+*/
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        int num = Integer.parseInt(bufferedReader.readLine().trim());
+
+        bufferedReader.close();
+        
+        for(int i = 1; i <= 10; i++)
+            System.out.printf("%d x %d = %d\n", num, i, num * i);
+    }
+}
